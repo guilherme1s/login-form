@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+:root {
+  --white-color: hsl(0, 0%, 100%);
+  --black-color: hsl(0, 0%, 0%);
+
+  --body-font: "Poppins", sans-serif;
+  --h1-font-size: 2rem;
+  --normal-font-size: 1rem;
+  --small-font-size: .813rem;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body,
+input,
+button {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.login {
+  position: relative;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+}
+
+.loginBackground {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.loginForm {
+  position: relative;
+  margin-inline: 1.5rem;
+  background-color: hsla(0, 0%, 100%, .01);
+  border: 2px solid hsla(0, 0%, 100%, .7);
+  padding: 2.5rem 1rem;
+  color: var(--white-color);
+  border-radius: 1rem;
+  backdrop-filter: blur(16px);
+}
+
+.loginTitle {
+  text-align: center;
+  font-size: var(--h1-font-size);
+  margin-bottom: 1.25rem;
+}
+
+.loginInputs, 
+.loginBox {
+  display: grid;
+}
+
+.loginInputs {
+  row-gap: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.loginBox {
+  grid-template-columns: 1fr max-content;
+  column-gap: .75rem;
+  align-items: center;
+  border: 2px solid hsla(0, 0%, 100%, .7);
+  padding-inline: 1.25rem;
+  border-radius: 4rem;
+}
+
+.loginInput, 
+.loginButton {
+  border: none;
+  outline: none;
+}
+
+.loginInput {
+  width: 100%;
+  background: none;
+  color: var(--white-color);
+  padding-block: 1rem;
+}
+
+.loginInput::placeholder {
+  color: var(--white-color);
+}
+
+.loginBox i {
+  font-size: 1.25rem;
+}
+
+.loginCheck, 
+.loginCheckbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.loginCheck {
+  margin-bottom: 1rem;
+  font-size: var(--small-font-size);
+}
+
+.loginCheckbox {
+  column-gap: .5rem;
+}
+
+.loginCheckInput {
+  width: 1rem;
+  height: 1rem;
+  accent-color: var(--white-color);
+}
+
+.loginForgot {
+  color: var(--white-color);
+}
+
+.loginForgot:hover {
+  text-decoration: underline;
+}
+
+.loginButton {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: var(--white-color);
+  border-radius: 4rem;
+  color: var(--black-color);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.loginRegister {
+  font-size: var(--small-font-size);
+  text-align: center;
+}
+
+.loginRegister a {
+  color: var(--white-color);
+  font-weight: 500;
+}
+
+.loginRegister a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 576px) {
+  .login {
+    justify-content: center;
+  }
+  .loginForm {
+    width: 420px;
+    padding-inline: 2.5rem;
+  }
+  .loginTitle {
+    margin-bottom: 2rem;
+  }
+}
