@@ -1,28 +1,27 @@
 <!DOCTYPE html>
-   <html lang="pt-br">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
-      <link rel="stylesheet" href="assets/css/styles.css">
-
-      <title>Login</title>
-   </head>
-   <body>
-      <div class="login">
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+   <link rel="stylesheet" href="assets/css/styles.css">
+   <title>Login</title>
+</head>
+<body>
+   <main>
+      <section class="login">
          <img src="assets/img/login-bg.png" alt="image background" class="loginBackground">
-
          <form action="" class="loginForm">
             <h1 class="loginTitle">Login</h1>
 
             <div class="loginInputs">
                <div class="loginBox">
-                  <input type="email" placeholder="Email" required class="loginInput">
+                  <input type="email" placeholder="Email" class="loginInputEmail">
                   <i class="ri-mail-fill"></i>
                </div>
 
                <div class="loginBox">
-                  <input type="password" placeholder="Password" required class="loginInput">
+                  <input type="password" placeholder="Password" class="loginInputPassword">
                   <i class="ri-lock-2-fill"></i>
                </div>
             </div>
@@ -42,6 +41,9 @@
                Don't have an account? <a href="#">Register</a>
             </div>
          </form>
-      </div>
-   </body>
+      </section>
+   </main>
+   
+   <script src="scripts/script.js"></script>
+</body>
 </html>
